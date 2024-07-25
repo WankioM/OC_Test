@@ -6,14 +6,14 @@ import Image from 'next/image'; // For the OpenCore logo
 
 export default function Footer() {
   return (
-    <footer className="relative bg-primary py-8">
-      <div className="relative bg-white rounded-3xl mx-auto max-w-[85%] p-8 sm:w-[90%] md:w-[1315px] sm:h-[521px] md:h-[579px]">
+    <footer className="relative bg-primary py-8 ">
+      <div className="relative bg-white rounded-3xl mx-auto max-w-[85%] p-8 md:pt-16 md:px-16 sm:w-[90%] md:w-[1315px] sm:h-[521px] md:h-[579px]">
         {/* Section 1: 5 sections */}
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4 text-center md:text-left'>
             {/* Section 1: Say Hello */}
         <div className="mb-4">
-        <h2 className="text-[20px] font-[600] leading-[30px] tracking[-0.01em] text-[#1D2939] font-[DM Sans]">Say Hello</h2>
-        <p className="text-[20px] font-[400] leading-[30px] tracking[-0.01em] text-[#475467] font-[DM Sans]">opencoregroup@gmail.com</p>
+        <h2 className="text-sm font-[600] leading-[30px]  text-[#1D2939] font-[DM Sans]">Say Hello</h2>
+        <p className="text-sm font-[400] leading-[30px]  text-[#475467] font-[DM Sans]">opencoregroup@gmail.com</p>
         </div>
 
         {/* Section 2: Social Media Icons */}
@@ -80,7 +80,7 @@ export default function Footer() {
           <Image
             src="/logo.svg" // Adjust path as necessary
             alt="OpenCore Logo"
-            width={341} // Adjust size as necessary
+            width={321} // Adjust size as necessary
             height={57} // Adjust size as necessary
             className="object-contain w-[341px] sm:w-[877px] h-[57] sm:h-[146px]"
           />
