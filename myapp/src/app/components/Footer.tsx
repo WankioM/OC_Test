@@ -1,8 +1,6 @@
-// OC_Test\myapp\src\app\components/Footer.tsx
-
-import { HiMail } from 'react-icons/hi'; // Email icon
-import { FaInstagram, FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa'; // Social media icons
-import Image from 'next/image'; // For the OpenCore logo
+import { HiMail } from 'react-icons/hi'; 
+import { FaInstagram, FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa'; 
+import Image from 'next/image'; 
 
 export default function Footer() {
   return (

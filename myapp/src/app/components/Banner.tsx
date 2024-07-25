@@ -9,7 +9,7 @@ export default function Banner() {
           Transforming your <strong>Ideas into reality</strong>
         </p>
         <p className="text-lg  md:text-xl ">
-        Let's build something extraordinary together to captivate your audience.
+        Let&#39;s build something extraordinary together to captivate your audience.
         </p>
       </div>
 

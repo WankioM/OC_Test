@@ -1,13 +1,28 @@
 // OC_Test\myapp\src\app\components\MainBody.tsx
 "use client"; 
 
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { HiSearch, HiFilter, HiChevronDown } from 'react-icons/hi'; // Importing search icon from react-icons
 
 export default function Main() {
 
     const [selectedTag, setSelectedTag] = useState<string>("All Resources");
     const [showDropdown, setShowDropdown] = useState<boolean>(false);
+
+    const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+ 
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 640); 
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => {
+      window.removeEventListener('resize', checkMobile);
+    };
+  }, []);
 
     const handleTagClick = (tag: string) => {
         setSelectedTag(tag);
@@ -132,7 +147,7 @@ export default function Main() {
         {/* Frame 2 */}
         <div className="w-full max-w-screen-xl text-white flex items-center justify-center p-0">
             <div className="w-full sm:w-[100%] h-auto sm:h-[840px] grid grid-cols-1 sm:grid-cols-3 gap-4 p-0">
-                {cards.slice(0, 6).map((card, index) => (
+              {cards.slice(0, isMobile ? 3 : 6).map((card, index) => (
                 <div key={index} className="w-full h-full bg-white text-black p-4 rounded-xl">
                     <img
                     src={card.imageUrl}
