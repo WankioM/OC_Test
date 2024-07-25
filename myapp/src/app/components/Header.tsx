@@ -1,4 +1,4 @@
-// OC_Test\myapp\src\app\components\Header.tsx
+
 export default function Header() {
     return (
         <header className="bg-white h-[563px] w-full flex flex-col items-center">

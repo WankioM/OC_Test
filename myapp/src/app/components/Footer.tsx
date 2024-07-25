@@ -76,10 +76,10 @@ export default function Footer() {
       {/* Section 6: OpenCore Logo */}
       <div className="absolute bottom-4 sm:bottom-0 right-0 left-0 flex justify-center">
           <Image
-            src="/logo.svg" // Adjust path as necessary
+            src="/logo.svg" 
             alt="OpenCore Logo"
-            width={321} // Adjust size as necessary
-            height={57} // Adjust size as necessary
+            width={321}
+            height={57} 
             className="object-contain w-[341px] sm:w-[877px] h-[57] sm:h-[146px]"
           />
         </div>

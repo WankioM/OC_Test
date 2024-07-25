@@ -1,4 +1,4 @@
-// OC_Test\myapp\src\app\components\Banner.tsx
+
 export default function Banner() {
     return (
       <div className="relative w-full h-[680px] flex items-center justify-center p-0">
@@ -18,8 +18,8 @@ export default function Banner() {
         <img
           src="/circle.svg"
           alt="OpenCore SVG"
-          width={250} // Width for mobile
-          height={250} // Height for mobile
+          width={250} 
+          height={250} 
           className="object-contain"
         />
       

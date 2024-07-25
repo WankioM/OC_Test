@@ -1,9 +1,8 @@
-// OC_Test\myapp\src\app\components\MainBody.tsx
+
 "use client"; 
 
 import React, { useState, useEffect } from 'react';
-import { HiSearch, HiFilter, HiChevronDown } from 'react-icons/hi'; // Importing search icon from react-icons
-
+import { HiSearch, HiFilter, HiChevronDown } from 'react-icons/hi'; 
 export default function Main() {
 
     const [selectedTag, setSelectedTag] = useState<string>("All Resources");
@@ -29,7 +28,7 @@ export default function Main() {
         setShowDropdown(false);
       };
   
-    const tags = ["All Resources", "Design", "Development", "Marketing", "Branding"]; // Example tags
+    const tags = ["All Resources", "Design", "Development", "Marketing", "Branding"]; 
     const cards = [
         {
           imageUrl: '/cs.png',
